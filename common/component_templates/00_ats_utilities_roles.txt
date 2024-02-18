@@ -1,0 +1,32 @@
+@cost0 = 0
+@power0 = -5
+
+utility_component_template = {
+	key = "COMBAT_COMPUTER_TRANSPORT"
+	size = small
+	icon = "GFX_ship_part_computer_default"
+	icon_frame = 1
+	power = @power0
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @cost0
+		}
+	}
+	ship_behavior = "swarm"
+
+	class_restriction = { shipclass_transport }
+	size_restriction = { transport }
+	component_set = "combat_computers"
+	ai_tags = { gunship }
+	ai_tag_weight = 0
+
+	ship_modifier = {
+		ship_weapon_range_mult = -0.7
+		ship_fire_rate_mult = -0.2
+	}
+
+	ai_weight = {
+		weight = 1
+	}
+}
