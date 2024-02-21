@@ -23,7 +23,7 @@ utility_component_template = {
 
 	ship_modifier = {
 		ship_weapon_range_mult = -0.7
-		ship_fire_rate_mult = -0.2
+		ship_fire_rate_mult = -0.5
 	}
 
 	ai_weight = {
